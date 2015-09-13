@@ -1,0 +1,25 @@
+Advertencia antes de crear una copia de seguridad
+
+PrestaShop no se hace responsable de su base de datos, de sus copias de seguridad o de sus restauraciones.
+PrestaShop es un software de código abierto; utilícelo bajo su propio riesgo de acuerdo a lo estipulado en el acuerdo de licencia.
+Debe hacer una copia de seguridad de sus datos de forma regular (tanto de sus archivos como de la base de datos).
+Esta función sólo permite hacer copias de seguridad de la base de datos, no de los archivos.
+Por defecto las tablas de la base de datos serán eliminadas durante la recuperación de la copia de seguridad (ver "opciones de copia de seguridad" más adelante).
+Verifique siempre la calidad e integridad de sus archivos de copia de seguridad.
+Verifique siempre que sus archivos de copia de seguridad están completos, son recientes y válidos; incluso si usted recibió un mensaje de confirmación durante el proceso de copia de seguridad.
+Compruebe sistemáticamente sus datos.
+No restaurar nunca una copia de seguridad en un sitio productivo.
+
+Cómo restaurar una copia de seguridad de la base de datos en 10 sencillos pasos
+
+Elija « No » en la sección « Activar Tienda » de la pagina « Mantenimiento “ situada en el menú “Preferencias”.
+Descargue el archivo de copia de seguridad eligiendo uno de los enlaces de la lista mostrada a continuación o desde su cliente FTP (ubique la carpeta "admin/backups" y descargue el archivo deseado).
+Compruebe la integridad de la copia de seguridad: busque errores, información incompleta, etc... Compruebe todos sus datos.
+Pregunte a su proveedor de hosting por los datos de acceso para el "phpMyAdmin", herramienta en línea para manipular su base de datos
+Ingrese al "phpMyAdmin" y seleccione su base de datos actual
+Si no habilitó la opción "Suprimir las tablas existentes durante la importación", debe suprimir todas las tablas presentes de forma manual.
+En la parte superior de la pantalla seleccione la opción "Importar"
+Pulse "Examinar ..." y seleccione el archivo de copia de seguridad de su disco duro
+Compruebe el tamaño máximo de archivo permitido por phpMyAdmin (por ejemplo, máximo: 16 MB)
+Si el tamaño de su archivo de copia de seguridad excede dicho límite, póngase en contacto con su hosting y solicite asistencia.
+Pulse el botón "Go" y espere a que la restauración de los datos finalice. El proceso puede tardar varios minutos.
